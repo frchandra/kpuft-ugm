@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Dpt;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 
@@ -12,16 +13,23 @@ class GoogleController extends Controller{
         return Socialite::driver('google')->redirect();
     }
     
-    public function handleGoogleCallback(){
+    public function handleGoogleCallback(Request $request){
         
         try {
-            $user = Socialite::driver('google')->user();
-            dd($user);
-            
-
+            $email = Socialite::driver('google')->user()->email;
+            // var_dump($email);     
         } catch (\Throwable $th) {
             //throw $th;
         }
+
+        $user = Dpt::where('email', $email)->where('is_voted', false)->get();
+
+        if(!$user->isEmpty()){
+            var_dump('yes');
+            $request->session()->put('is_voted', true);
+        }
+
+        var_dump('no');
 
     }
 
