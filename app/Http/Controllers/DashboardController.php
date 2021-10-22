@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller{
     
-    public function inedx(){
-        
+    public function index(){
+        return view('dashboard');
     }
 
 }
