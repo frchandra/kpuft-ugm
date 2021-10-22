@@ -18,6 +18,7 @@ class CreateCalonsTable extends Migration
             $table->string('nama');
             $table->string('visi');
             $table->string('misi');
+            $table->unsignedInteger('vote')->default(0);
             $table->timestamps();
         });
     }

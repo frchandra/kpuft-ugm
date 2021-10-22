@@ -14,6 +14,22 @@
     <h1>ini dashboard!</h1>
 
 
+    <form action="dashboard" method="POST">
+      @csrf
+      <p>Please select your favorite:</p>
+      
+      @foreach ($calons as $calon)
+        <input type="radio" name="calonId" value="{{ $calon->calon_id }}">
+        <label >{{ $calon->nama }} {{ $calon->calon_id }}</label><br>
+      @endforeach
+
+      <br>  
+
+      <input type="submit" value="Submit">
+
+    </form>
+
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

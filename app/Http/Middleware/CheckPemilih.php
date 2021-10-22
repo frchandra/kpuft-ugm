@@ -17,7 +17,7 @@ class CheckPemilih
     public function handle(Request $request, Closure $next)
     {
 
-        if($request->session()->has('is_voted')){
+    if($request->session()->get('is_voted') === true){
             return $next($request);
         }
         else{

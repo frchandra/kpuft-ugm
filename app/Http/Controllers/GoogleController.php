@@ -27,11 +27,13 @@ class GoogleController extends Controller{
         $user = Dpt::where('email', $email)->where('is_voted', false)->get();
 
         if(!$user->isEmpty()){
-            return redirect('dashboard');
             $request->session()->put('is_voted', true);
+            $request->session()->put('email', $email);
+            return redirect('dashboard');
         }
 
         return redirect('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+        
 
     }
 
