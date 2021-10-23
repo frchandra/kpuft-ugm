@@ -16,14 +16,11 @@ class GoogleController extends Controller{
     public function handleGoogleCallback(Request $request){
         
         try {
-            $email = Socialite::driver('google')->user()->email;
-            // var_dump($email);     
+            $email = Socialite::driver('google')->user()->email;               
         } catch (\Throwable $th) {
-            //throw $th;
+            return '404';
         }
-
-
-
+        
         $user = Dpt::where('email', $email)->where('is_voted', false)->get();
 
         if(!$user->isEmpty()){

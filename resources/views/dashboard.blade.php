@@ -20,7 +20,7 @@
       
       @foreach ($calons as $calon)
         <input type="radio" name="calonId" value="{{ $calon->calon_id }}">
-        <label >{{ $calon->nama }} {{ $calon->calon_id }}</label><br>
+        <label >{{ $calon->nama }} {{ $calon->calon_id }} {{ $calon->visi }} {{ $calon->misi }}</label><br>
       @endforeach
 
       <br>  
