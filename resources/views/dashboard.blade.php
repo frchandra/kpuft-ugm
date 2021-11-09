@@ -13,6 +13,8 @@
   <body>
     <h1>ini dashboard!</h1>
 
+    <h3>anda masuk sebagai {{ Session::get('nama') }}</h3>
+
 
     <form action="dashboard" method="POST">
       @csrf
@@ -20,6 +22,7 @@
       
       @foreach ($calons as $calon)
         <input type="radio" name="calonId" value="{{ $calon->calon_id }}">
+        <input type="text" name="test" value="test" hidden> 
         <label >{{ $calon->nama }} {{ $calon->calon_id }} {{ $calon->visi }} {{ $calon->misi }}</label><br>
       @endforeach
 
@@ -41,4 +44,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
   </body>
+
+  <script>    
+      // Enable navigation prompt
+      window.onbeforeunload = function() {
+          return true;
+      };
+      // Remove navigation prompt
+      window.onbeforeunload = null;
+    </script>
 </html>

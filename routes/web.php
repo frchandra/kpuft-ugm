@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->middleware('checkPemilih');
 
-Route::post('dashboard', [\App\Http\Controllers\DashboardController::class, 'store']);
+Route::post('dashboard', [\App\Http\Controllers\DashboardController::class, 'store'])->middleware('checkPemilih');
 
 Route::get('auth/google', [App\Http\Controllers\GoogleController::class, 'redirectToGoogle'])->name('google.login');
 
