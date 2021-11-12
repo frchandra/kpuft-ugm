@@ -15,7 +15,7 @@ class CreateDptsTable extends Migration
     {
         Schema::create('dpts', function (Blueprint $table) {
             $table->id('dpt_id');
-            $table->foreignId('departemen_id');
+            $table->string('departemen');
             $table->string('email')->unique();
             $table->boolean('is_voted');
             // $table->timestamps();

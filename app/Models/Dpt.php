@@ -14,7 +14,5 @@ class Dpt extends Model
     protected $primaryKey = 'dpt_id';
     protected $guarded = ['dpt_id'];
 
-    public function departemen(){
-        return $this->belongsTo(Departemen::class, 'departemen_id', 'departemen_id');
-    }
+
 }
