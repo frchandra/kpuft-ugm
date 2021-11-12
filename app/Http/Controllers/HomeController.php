@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+// use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Cache;
 
@@ -12,7 +12,7 @@ class HomeController extends Controller
               
 
         $out = Cache::remember('cache', 10, function () {
-            // echo '====FETCHING====';             
+            //fetching             
             return DB::table('dpts')->select(DB::raw('departemen, count(*)'))->where('is_voted', 1)->groupBy('departemen')->get();
         });
 
