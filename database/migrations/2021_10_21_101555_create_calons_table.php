@@ -16,10 +16,10 @@ class CreateCalonsTable extends Migration
         Schema::create('calons', function (Blueprint $table) {
             $table->id('calon_id');
             $table->string('nama');
-            $table->string('visi');
-            $table->string('misi');
+            // $table->string('visi');
+            // $table->string('misi');
             $table->unsignedInteger('vote')->default(0);
-            $table->timestamps();
+            // $table->timestamps();
         });
     }
 

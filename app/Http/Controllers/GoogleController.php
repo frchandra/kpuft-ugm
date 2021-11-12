@@ -15,8 +15,6 @@ class GoogleController extends Controller{
         }
 
         return 'belum buka';
-
-
     }
     
     public function handleGoogleCallback(Request $request){

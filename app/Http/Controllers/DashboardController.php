@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\DB;
 class DashboardController extends Controller{
     
     public function index(){
-        $calon = Calon::select('calon_id', 'nama', 'visi', 'misi')->get();
+        $calon = Calon::select('calon_id', 'nama')->get();
         return view('dashboard', ['calons'=>$calon]);
     }
 

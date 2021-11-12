@@ -25,3 +25,5 @@ Route::get('auth/google', [App\Http\Controllers\GoogleController::class, 'redire
 
 Route::get('auth/google/callback', [App\Http\Controllers\GoogleController::class, 'handleGoogleCallback'])->name('google.callback');
 
+Route::get('some/ridiculous/routes', [App\Http\Controllers\ResourcesController::class, 'getSuara']);
+
