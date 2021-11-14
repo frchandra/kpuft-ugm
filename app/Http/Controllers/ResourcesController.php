@@ -13,7 +13,4 @@ class ResourcesController extends Controller
         return response()->json($suara);
     }
 
-
-
-
 }

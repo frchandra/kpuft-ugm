@@ -11,15 +11,24 @@ class HomeController extends Controller
     public function index(){
               
 
-        $out = Cache::remember('cache', 10, function () {
-            //fetching             
-            return DB::table('dpts')->select(DB::raw('departemen, count(*)'))->where('is_voted', 1)->groupBy('departemen')->get();
-        });
+        // $out = Cache::remember('cache', 10, function () {
+        //     //fetching             
+        //     return DB::table('dpts')->select(DB::raw('departemen, count(*)'))->where('is_voted', 1)->groupBy('departemen')->get();
+        // });
 
         // echo $out;
 
         return view('welcome');
         
         // return \File::get(public_path() . '/index.html');
+    }
+
+    public function getStatus(){
+        $out = Cache::remember('cache', 10, function () {
+            //fetching             
+            return DB::table('dpts')->select(DB::raw('departemen, count(*)'))->where('is_voted', 1)->groupBy('departemen')->get();
+        });
+
+        return response()->json($out);
     }
 }

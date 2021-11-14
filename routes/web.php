@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',  [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/status',  [\App\Http\Controllers\HomeController::class, 'getStatus'])->name('home');
+
 Route::get('dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->middleware('checkPemilih');
 
 Route::post('dashboard', [\App\Http\Controllers\DashboardController::class, 'store'])->middleware('checkPemilih');
