@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class CheckPemilih
@@ -15,8 +16,10 @@ class CheckPemilih
      * @return mixed
      */
     public function handle(Request $request, Closure $next){
+        
+        $now = Carbon::now()->timestamp;
 
-        if(env('IS_OPEN') == 'TRUE'){
+        if($now >= env('OPEN_AT')){
             if($request->session()->get('is_voted') === true){
                 
                 $response = $next($request);

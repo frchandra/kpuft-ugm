@@ -7,7 +7,6 @@ use App\Models\Calon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Cache;
-use Prophecy\Call\Call;
 
 class DashboardController extends Controller{
     
@@ -26,7 +25,7 @@ class DashboardController extends Controller{
         $email = $request->session()->pull('email');
         $request->session()->flush();
 
-        //set user telah nyoblos 
+        //set user telah memilih 
         Dpt::where('email', $email)->update(['is_voted' => true]);
 
         //optional, counter

@@ -16,7 +16,7 @@
     <h3>anda masuk sebagai {{ Session::get('nama') }}</h3>
 
 
-    <form action="dashboard" method="POST">
+    <form action="dashboard" method="POST" onsubmit="return confirm('Are you sure? your action is irreversible!');">
       @csrf
       <p>Please select your favorite:</p>
       
@@ -28,7 +28,7 @@
 
       <br>  
 
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" >
 
     </form>
 
@@ -45,12 +45,22 @@
     -->
   </body>
 
-  <script>    
+  {{-- <script>    
       // Enable navigation prompt
       window.onbeforeunload = function() {
           return true;
       };
       // Remove navigation prompt
       window.onbeforeunload = null;
-    </script>
+  </script> --}}
+
+<script>
+  function confirmation() {
+    const agree=confirm("Are you sure you wish to continue?");
+    if (agree)
+      return true ;
+    else
+      return false ;
+    } 
+</script>
 </html>

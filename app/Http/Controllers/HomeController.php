@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 // use Illuminate\Http\Request;
+
+
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Cache;
+
 
 class HomeController extends Controller
 {
@@ -16,7 +19,9 @@ class HomeController extends Controller
         //     Cache::decrement('visit', 10);  
         // Cache::increment('visit', 1);
 
-        // echo $out;
+
+
+        // var_dump((int)env('OPEN_AT', '69421'));  
         return view('welcome');        
         // return \File::get(public_path() . '/index.html');
     }
