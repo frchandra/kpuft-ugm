@@ -12,7 +12,7 @@ class GoogleController extends Controller{
     
     public function redirectToGoogle(){
         $now = Carbon::now()->timestamp;
-        if($now >= env('OPEN_AT')){
+        if($now >= env('OPEN_AT') && $now <= env('CLOSE_AT')){
             return Socialite::driver('google')->stateless()->with(['hd'=>'mail.ugm.ac.id'])->redirect();
         }
         //belum buka
@@ -25,7 +25,8 @@ class GoogleController extends Controller{
             $email = Socialite::driver('google')->stateless()->user()->email;               
         } catch (\Throwable $th) {
             //error karena mengakses kembali halaman login google
-            dd($th);
+            // dd($th);
+            return ('404');
         }       
                 
         $user = Dpt::where('email', $email)->where('is_voted', false)->get();

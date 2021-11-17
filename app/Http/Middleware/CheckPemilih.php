@@ -19,7 +19,7 @@ class CheckPemilih
         
         $now = Carbon::now()->timestamp;
 
-        if($now >= env('OPEN_AT')){
+        if($now >= env('OPEN_AT') && $now <= env('CLOSE_AT')){
             if($request->session()->get('is_voted') === true){
                 
                 $response = $next($request);
