@@ -1,0 +1,37 @@
+version: '3.7'
+
+services:
+    app:
+        build:
+            context: .
+            dockerfile: .docker/Dockerfile
+        image: 'kpuft-ugm'
+        container_name: kpuft-ugm-app
+        ports:
+            - "8000:80"
+        volumes:
+            - ./:/var/www/html
+        networks:
+            - kpuft-ugm-network
+        depends_on:
+            - db
+    db:
+        image: 'mysql:8.0.19'
+        container_name: kpuft-ugm-db
+        restart: unless-stopped
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_DATABASE: ${DB_DATABASE}
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+            MYSQL_PASSWORD: ${DB_PASSWORD}
+            MYSQL_USER: ${DB_USERNAME}
+            MYSQL_ALLOW_EMPTY_PASSWORD: 'no'
+        volumes:
+            - ./.docker/dbdata:/var/lib/mysql
+        networks:
+            - kpuft-ugm-network
+
+networks:
+    kpuft-ugm-network:
+        driver: bridge
