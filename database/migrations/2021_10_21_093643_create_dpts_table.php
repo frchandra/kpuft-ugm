@@ -17,8 +17,7 @@ class CreateDptsTable extends Migration
             $table->id('dpt_id');
             $table->string('departemen');
             $table->string('email')->unique();
-            $table->boolean('is_voted');
-            // $table->timestamps();
+            $table->boolean('is_voted');          
         });
     }
 
