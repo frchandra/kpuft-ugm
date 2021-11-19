@@ -11,14 +11,24 @@ use Illuminate\Support\Facades\DB;
 class DashboardController extends Controller{
     
     public function index(){
-        $calon = Calon::select('calon_id', 'nama')->get();
+        $calon = Calon::select('calon_id', 'nama')->get();//mungkin ndak dipake
         return view('dashboard', ['calons'=>$calon]);
     }
 
     public function store(Request $request){
         //increment perolehan suara
-        $calonId = (int)$request->input('calonId');
-        Calon::where('calon_id', $calonId)->update(['vote'=> DB::raw('vote+1')]);
+        $calonId = (int)$request->input('calonId'); //berpotensi error bila user mengubah DOM dari formnya
+        if($calonId!==null){
+            try {
+                Calon::where('calon_id', $calonId)->update(['vote'=> DB::raw('vote+1')]);                
+            } catch (\Throwable $th) {
+                // dd($th);
+                return "Access Denied...";
+            }
+        }
+        else{
+            return "Access Denied";
+        }
 
         //logout kan si user
         $request->session()->put('is_voted', false);

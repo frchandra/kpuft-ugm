@@ -30,7 +30,6 @@
         console.log(i + " siap dipilih")
         chosen = i;
         document.getElementById("modalTitle").innerHTML = "Calon Ketua No Urut " + i;
-        document.getElementById("value").value = i;
     }
 
     function sendVote() {
@@ -42,25 +41,12 @@
 
     <div class="hero-container text-center">
         <h3 class="font-mont back"><a class="back" href="/">&#8592; Kembali</a></h3>
-        <h2 class="font-mont cta">Anda Masuk Sebagai {{ Session::get('nama') }}</h2>
         <h1 class="title font-squids" style="margin-bottom: 10px;">Calon Ketua BEM KMFT UGM 2021 </h1>
         <h2 class="font-mont cta">Klik Calon Ketua Pilihanmu!</h2>
 
         <div class="content-container">
-          <form action="dashboard" method="POST">
-            @csrf
-            <input type="text" name="calonId" value="1" hidden> 
-          </form>
-          <button id="button1" class="button" onclick="openModal(), vote(1)"></button>
-          
-          <form action="dashboard" method="POST">
-            @csrf
-            <input type="text" name="calonId" value="2" hidden> 
-          </form>
-          <button id="button2" class="button" onclick="openModal(), vote(2)"></button>
-          
-
-
+            <button id="button1" class="button" onclick="openModal(), vote(1)"></button>
+            <button id="button2" class="button" onClick="openModal(), vote(2)"></button>
         </div>
 
 
@@ -70,16 +56,12 @@
             <div class="modal-content">
                 <p class="close" onclick="closeModal()">&times;</p>
                 <h2 style="margin-bottom: 20px;">Apakah Anda Yakin Memilih <span id="modalTitle">Calon Ketua No Urut</span>?</h2>
-                <p>Pilihan anda akan disimpan dan TIDAK dapat diganti lagi</p>
+                <p>Jawaban akan disimpan dan tidak bisa diganti lagi</p>
                 <div style="margin-top: 40px;">
-
-                  <form action="dashboard" method="POST">
-                    @csrf
                     <button class="confirmBtn" style="background-color: #304B72;" onclick="closeModal()">Tidak, kembali</button>
-                    <input id="value" type="text" name="calonId" hidden>
-                    <button type="submit" class="confirmBtn" style="background-color: #FB2481;" >Ya, pilih</button>
-                  </form>
-
+                    <a  style="text-decoration: none;" href="/terimakasih" >
+                        <button class="confirmBtn" style="background-color: #FB2481;" onclick="sendVote()">Ya, pilih</button>
+                    </a>
                 </div>
             </div>
         </div>

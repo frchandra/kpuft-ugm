@@ -26,7 +26,7 @@ class GoogleController extends Controller{
         } catch (\Throwable $th) {
             //error karena mengakses kembali halaman login google
             // dd($th);
-            return ('404');
+            return ('ACCESS DENIED');
         }       
                 
         $user = Dpt::where('email', $email)->where('is_voted', false)->get();
