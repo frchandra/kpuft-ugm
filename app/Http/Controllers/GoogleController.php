@@ -39,7 +39,10 @@ class GoogleController extends Controller{
         }
 
         //bila tidak memenuhi syarat diatas
-        return ('anda sudah pernah ngevote blocked by : controller'); //atau bukan tidak eliglible atau bukan email ugm (somehow pass the security)
+        //atau bukan tidak eliglible atau bukan email ugm (somehow pass the security)
+        
+        return redirect(env("APP_URL")."#/error");
+        // return ('anda sudah pernah ngevote blocked by : controller'); 
         
 
     }

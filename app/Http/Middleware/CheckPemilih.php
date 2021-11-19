@@ -30,11 +30,11 @@ class CheckPemilih
             }
             else{               
                 
-                dd("anda belum melakukan login atau sudah di logoutkan sistem");
-                // return redirect('...');
+                // dd("anda belum melakukan login atau sudah di logoutkan sistem");
+                return redirect(env("APP_URL")."#/error");
             }
         }
-        dd('belum buka');
+        dd('belum buka (bruhhh.....)');
         // return redirect('...');
     
 

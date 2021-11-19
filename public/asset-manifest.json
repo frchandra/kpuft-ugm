@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.0ea6251e.chunk.js",
-    "main.js.map": "/static/js/main.0ea6251e.chunk.js.map",
+    "main.js": "/static/js/main.caeefd7c.chunk.js",
+    "main.js.map": "/static/js/main.caeefd7c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e428983a.js",
     "runtime-main.js.map": "/static/js/runtime-main.e428983a.js.map",
     "static/css/2.a95be28f.chunk.css": "/static/css/2.a95be28f.chunk.css",
-    "static/js/2.242547ed.chunk.js": "/static/js/2.242547ed.chunk.js",
-    "static/js/2.242547ed.chunk.js.map": "/static/js/2.242547ed.chunk.js.map",
+    "static/js/2.3ae8dde5.chunk.js": "/static/js/2.3ae8dde5.chunk.js",
+    "static/js/2.3ae8dde5.chunk.js.map": "/static/js/2.3ae8dde5.chunk.js.map",
     "static/js/3.c008fe55.chunk.js": "/static/js/3.c008fe55.chunk.js",
     "static/js/3.c008fe55.chunk.js.map": "/static/js/3.c008fe55.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.a95be28f.chunk.css.map": "/static/css/2.a95be28f.chunk.css.map",
-    "static/js/2.242547ed.chunk.js.LICENSE.txt": "/static/js/2.242547ed.chunk.js.LICENSE.txt",
+    "static/js/2.3ae8dde5.chunk.js.LICENSE.txt": "/static/js/2.3ae8dde5.chunk.js.LICENSE.txt",
     "static/media/ACARA.58bd2fbf.png": "/static/media/ACARA.58bd2fbf.png",
     "static/media/ACARA2.0d6cba17.png": "/static/media/ACARA2.0d6cba17.png",
     "static/media/Dadu.c5ffac64.png": "/static/media/Dadu.c5ffac64.png",
@@ -44,7 +44,7 @@
   "entrypoints": [
     "static/js/runtime-main.e428983a.js",
     "static/css/2.a95be28f.chunk.css",
-    "static/js/2.242547ed.chunk.js",
-    "static/js/main.0ea6251e.chunk.js"
+    "static/js/2.3ae8dde5.chunk.js",
+    "static/js/main.caeefd7c.chunk.js"
   ]
 }

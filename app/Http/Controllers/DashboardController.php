@@ -18,17 +18,17 @@ class DashboardController extends Controller{
     public function store(Request $request){
         //increment perolehan suara
         $calonId = (int)$request->input('calonId'); //berpotensi error bila user mengubah DOM dari formnya
-        if($calonId!==null){
+
             try {
-                Calon::where('calon_id', $calonId)->update(['vote'=> DB::raw('vote+1')]);                
+                $affected = Calon::where('calon_id', $calonId)->update(['vote'=> DB::raw('vote+1')]);                
             } catch (\Throwable $th) {
                 // dd($th);
                 return "Access Denied...";
             }
-        }
-        else{
-            return "Access Denied";
-        }
+            if($affected == 0){
+                return "input invalid (bruhhh....)";
+            }
+
 
         //logout kan si user
         $request->session()->put('is_voted', false);
@@ -36,7 +36,12 @@ class DashboardController extends Controller{
         $request->session()->flush();
 
         //set user telah memilih 
-        Dpt::where('email', $email)->update(['is_voted' => true]);
+        try {
+            Dpt::where('email', $email)->update(['is_voted' => true]);            
+        } catch (\Throwable $th) {
+            // dd($th);
+            return "access denied";
+        }
 
         //optional, counter
         // $out = Cache::get('visit');        
@@ -50,7 +55,7 @@ class DashboardController extends Controller{
         //     Cache::decrement('visit', 10);                    
         // Cache::increment('visit', 1);
 
-        return redirect('/');
+        return redirect(env("APP_URL"));
     }
 
 
