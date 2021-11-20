@@ -29,7 +29,7 @@ class HomeController extends Controller
     public function getStatus(){
         $out = Cache::remember('status', 10, function () {
             //fetching             
-            return DB::table('dpts')->select(DB::raw('departemen, count(*)'))->where('is_voted', 1)->groupBy('departemen')->get();
+            return DB::table('dpts')->select(DB::raw('departemen, count(*) as count'))->where('is_voted', 1)->groupBy('departemen')->get();
         });
        
         return response()->json($out);
