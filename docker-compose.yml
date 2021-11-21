@@ -12,7 +12,6 @@ services:
         volumes:
             - ./:/var/www/html
         networks:
-            default:
             internal:
         depends_on:
             - db
