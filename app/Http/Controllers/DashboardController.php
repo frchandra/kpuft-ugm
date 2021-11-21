@@ -10,9 +10,10 @@ use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller{
     
-    public function index(){
-        $calon = Calon::select('calon_id', 'nama')->get();//mungkin ndak dipake
-        return view('dashboard', ['calons'=>$calon]);
+    public function index(Request $request){
+        $email = $request->session()->get('email');
+        // calon = Calon::select('calon_id', 'nama')->get();//mungkin ndak dipake
+        return view('dashboard', ['nama'=>$email]);
     }
 
     public function store(Request $request){

@@ -42,7 +42,7 @@
 
     <div class="hero-container text-center">
         <h3 class="font-mont back"><a class="back" href="/">&#8592; Kembali</a></h3>
-        <h2 class="font-mont cta">Anda Masuk Sebagai {{ Session::get('nama') }}</h2>
+        <h2 class="font-mont cta">Anda Masuk Sebagai {{ $nama }}</h2>
         <h1 class="title font-squids" style="margin-bottom: 10px;">Calon Ketua BEM KMFT UGM 2021 </h1>
         <h2 class="font-mont cta">Klik Calon Ketua Pilihanmu!</h2>
 
