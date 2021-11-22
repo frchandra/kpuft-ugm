@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.caeefd7c.chunk.js",
-    "main.js.map": "/static/js/main.caeefd7c.chunk.js.map",
+    "main.js": "/static/js/main.1b37086d.chunk.js",
+    "main.js.map": "/static/js/main.1b37086d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e428983a.js",
     "runtime-main.js.map": "/static/js/runtime-main.e428983a.js.map",
     "static/css/2.a95be28f.chunk.css": "/static/css/2.a95be28f.chunk.css",
-    "static/js/2.3ae8dde5.chunk.js": "/static/js/2.3ae8dde5.chunk.js",
-    "static/js/2.3ae8dde5.chunk.js.map": "/static/js/2.3ae8dde5.chunk.js.map",
+    "static/js/2.672adf48.chunk.js": "/static/js/2.672adf48.chunk.js",
+    "static/js/2.672adf48.chunk.js.map": "/static/js/2.672adf48.chunk.js.map",
     "static/js/3.c008fe55.chunk.js": "/static/js/3.c008fe55.chunk.js",
     "static/js/3.c008fe55.chunk.js.map": "/static/js/3.c008fe55.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.a95be28f.chunk.css.map": "/static/css/2.a95be28f.chunk.css.map",
-    "static/js/2.3ae8dde5.chunk.js.LICENSE.txt": "/static/js/2.3ae8dde5.chunk.js.LICENSE.txt",
+    "static/js/2.672adf48.chunk.js.LICENSE.txt": "/static/js/2.672adf48.chunk.js.LICENSE.txt",
     "static/media/ACARA.58bd2fbf.png": "/static/media/ACARA.58bd2fbf.png",
     "static/media/ACARA2.0d6cba17.png": "/static/media/ACARA2.0d6cba17.png",
     "static/media/Dadu.c5ffac64.png": "/static/media/Dadu.c5ffac64.png",
@@ -27,8 +27,8 @@
     "static/media/MEDPUB.df295f71.png": "/static/media/MEDPUB.df295f71.png",
     "static/media/MEDPUB2.4422d553.png": "/static/media/MEDPUB2.4422d553.png",
     "static/media/Mont-Book.6c0793e1.otf": "/static/media/Mont-Book.6c0793e1.otf",
-    "static/media/calon1.b5eb9aec.webp": "/static/media/calon1.b5eb9aec.webp",
-    "static/media/calon2.7ce6ee12.webp": "/static/media/calon2.7ce6ee12.webp",
+    "static/media/calon1.f8b7233a.webp": "/static/media/calon1.f8b7233a.webp",
+    "static/media/calon2.ecca0189.webp": "/static/media/calon2.ecca0189.webp",
     "static/media/cards.b6a841f0.webp": "/static/media/cards.b6a841f0.webp",
     "static/media/catur.889001fb.webp": "/static/media/catur.889001fb.webp",
     "static/media/choosecandidate.77decc4c.webp": "/static/media/choosecandidate.77decc4c.webp",
@@ -44,7 +44,7 @@
   "entrypoints": [
     "static/js/runtime-main.e428983a.js",
     "static/css/2.a95be28f.chunk.css",
-    "static/js/2.3ae8dde5.chunk.js",
-    "static/js/main.caeefd7c.chunk.js"
+    "static/js/2.672adf48.chunk.js",
+    "static/js/main.1b37086d.chunk.js"
   ]
 }

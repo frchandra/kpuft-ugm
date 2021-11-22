@@ -51,14 +51,26 @@
             @csrf
             <input type="text" name="calonId" value="1" hidden> 
           </form>
-          <button id="button1" class="button" onclick="openModal(), vote(1)"></button>
-          
+          {{-- <button id="button1" class="button" onclick="openModal(), vote(1)"></button> --}}
+          <button class="button" onclick="openModal(), vote(1)">
+            <div id="card1" class="card green">
+                <span class="inner">
+                    <span class="mark"><img className="photo" src="./assets/images/calon1.webp"/></span>
+                </span>
+            </div>
+        </button>
           <form action="dashboard" method="POST">
             @csrf
             <input type="text" name="calonId" value="2" hidden> 
           </form>
-          <button id="button2" class="button" onclick="openModal(), vote(2)"></button>
-          
+          {{-- <button id="button2" class="button" onclick="openModal(), vote(2)"></button> --}}
+          <button class="button" onClick="openModal(), vote(2)">
+            <div id="card2" class="card green">
+                <span class="inner">
+                    <span class="mark"><img className="photo" src="./assets/images/calon2.webp"/></span>
+                </span>
+            </div>
+        </button>
 
 
         </div>
