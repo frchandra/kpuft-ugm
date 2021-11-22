@@ -18,6 +18,7 @@ services:
         volumes:
             - .:/var/www
             - ./conf.d/php-local.ini:/usr/local/etc/php/local.ini:ro
+            - ./conf.d/php-www.conf:/usr/local/etc/php-fpm.d/www.conf
             - ./conf.d/nginx.conf:/etc/nginx/nginx.conf:ro
             - ./ssl:/etc/ssl-nginx:ro
         networks:
