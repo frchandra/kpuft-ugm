@@ -24,10 +24,6 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& rm -rf /tmp/pear/
 
-# Touch
-RUN touch /run/php8-fpm
-chmod a+rx /run/php8-fpm
-
 # Copy files
 COPY . /var/www
 
