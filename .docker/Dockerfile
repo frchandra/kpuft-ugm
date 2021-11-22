@@ -48,21 +48,23 @@ RUN npm run prod
 # setup composer and laravel
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-RUN composer install --working-dir="/var/www"
+RUN composer install --working-dir="/var/www" --optimize-autoloader --no-dev
 
 RUN composer dump-autoload --working-dir="/var/www"
 
 RUN php artisan key:generate
 
-#RUN php artisan route:clear
+RUN php artisan route:clear
 
-#RUN php artisan route:cache
+RUN php artisan route:cache
 
-#RUN php artisan config:clear
+RUN php artisan config:clear
 
-#RUN php artisan config:cache
+RUN php artisan config:cache
 
 EXPOSE 80
+
+EXPOSE 443
 
 RUN ["chmod", "+x", "post_deploy.sh"]
 
