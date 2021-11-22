@@ -25,8 +25,8 @@ class GoogleController extends Controller{
             $email = Socialite::driver('google')->stateless()->user()->email;               
         } catch (\Throwable $th) {
             //error karena mengakses kembali halaman login google
-            // dd($th);
-            return ('ACCESS DENIED');
+            dd($th);
+            // return ('ACCESS DENIED');
         }       
                 
         $user = Dpt::where('email', $email)->where('is_voted', false)->get();
