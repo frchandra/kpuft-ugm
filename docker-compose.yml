@@ -19,7 +19,7 @@ services:
             - .:/var/www
             - ./conf.d/php-local.ini:/usr/local/etc/php/local.ini:ro
             - ./conf.d/nginx.conf:/etc/nginx/nginx.conf:ro
-            - ./ssl:/etc/ssl:ro
+            - ./ssl:/etc/ssl-nginx:ro
         networks:
             default:
             internal:
