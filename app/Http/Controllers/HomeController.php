@@ -27,7 +27,7 @@ class HomeController extends Controller
     }
 
     public function getStatus(){
-        $out = Cache::remember('status', 600, function () { //in second
+        $out = Cache::remember('status', env('DEPARTEMEN_CACHE'), function () { //in second
             //fetching             
             return DB::table('dpts')->select(DB::raw('departemen, count(*) as count'))->where('is_voted', 1)->groupBy('departemen')->get();
         });
