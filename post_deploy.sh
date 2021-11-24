@@ -19,6 +19,9 @@ optipng -o1 /var/www/public/static/media/*
 chown -R www-data:www-data /var/www
 chmod -R 755 /var/www
 chmod 000 /var/www/public/phpinfo.php
+else
+chown -R www-data:www-data /var/www
+chmod -R 755 /var/www
 fi
 
 # start the application
