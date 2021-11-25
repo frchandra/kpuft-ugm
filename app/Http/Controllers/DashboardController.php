@@ -56,7 +56,7 @@ class DashboardController extends Controller{
         //     Cache::decrement('visit', 10);                    
         // Cache::increment('visit', 1);
 
-        return redirect(env("APP_URL")."/#/terimakasih");
+        return redirect(env("APP_URL")."#/terimakasih"); //hati2 back slash
     }
 
 

@@ -15,8 +15,8 @@ return [
     |
     */
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie', 'status/*', '*'],
-    // 'paths' => ['*'],
+    // 'paths' => ['api/*', 'sanctum/csrf-cookie', 'status/*', '*'],
+    'paths' => ['*'],
 
     'allowed_methods' => ['GET'],
 
@@ -24,7 +24,8 @@ return [
 
     'allowed_origins_patterns' => ['*'],
 
-    'allowed_headers' => ['X-Custom-Header', 'Upgrade-Insecure-Requests', '*'], //solosi dari error cors nya weka
+    // 'allowed_headers' => ['X-Custom-Header', 'Upgrade-Insecure-Requests', '*'], //solosi dari error cors nya weka
+    'allowed_headers' => ['*'],
 
     'exposed_headers' => [],
 
