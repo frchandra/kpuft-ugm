@@ -41,6 +41,8 @@ class HomeController extends Controller
             return DB::table('dpts')->select(DB::raw('count(*) as count'))->where('is_voted', 1)->get();
         });
        
-        return response()->json($out);
+        $out = json_encode($out);
+        $out = trim($out, '[]');
+        return response($out);
     }
 }
