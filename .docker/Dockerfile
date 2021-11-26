@@ -27,13 +27,6 @@ RUN apt-get update \
 # Copy files
 COPY . /var/www
 
-RUN chmod -R 777 /var/www
-
-# setup composer and laravel
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
-RUN composer install --working-dir="/var/www" --optimize-autoloader --no-dev && composer dump-autoload --working-dir="/var/www"
-
 RUN ["chmod", "+x", "post_deploy.sh"]
 
 CMD [ "sh", "./post_deploy.sh" ]

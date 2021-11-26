@@ -1,5 +1,10 @@
 #!/bin/bash
 
+chmod -R 777 /var/www
+curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+composer install --working-dir="/var/www" --optimize-autoloader --no-dev 
+composer dump-autoload --working-dir="/var/www"
+
 if [ "$APP_DEBUG" != "true" ]; then
 echo "Optimizing App for Deployment Environment"
 # optimize for deployment
@@ -11,9 +16,6 @@ php artisan config:cache
 
 # update application cache
 php artisan optimize
-
-# Optimizing PNG file
-optipng -o1 /var/www/public/static/media/*
 
 # set correct permission
 chown -R www-data:www-data /var/www
