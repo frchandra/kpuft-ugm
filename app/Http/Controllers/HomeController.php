@@ -34,4 +34,13 @@ class HomeController extends Controller
        
         return response()->json($out);
     }
+
+    public function getAllStatus(){
+        $out = Cache::remember('all_status', env('DEPARTEMEN_CACHE'), function () { //in second
+            //fetching             
+            return DB::table('dpts')->select(DB::raw('count(*) as count'))->where('is_voted', 1)->get();
+        });
+       
+        return response()->json($out);
+    }
 }

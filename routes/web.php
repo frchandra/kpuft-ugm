@@ -17,6 +17,8 @@ Route::get('/',  [\App\Http\Controllers\HomeController::class, 'index'])->name('
 
 Route::get('/status',  [\App\Http\Controllers\HomeController::class, 'getStatus']);
 
+Route::get('/allstatus',  [\App\Http\Controllers\HomeController::class, 'getAllStatus']);
+
 Route::get('dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->middleware('checkPemilih');
 
 Route::post('dashboard', [\App\Http\Controllers\DashboardController::class, 'store'])->middleware('checkPemilih');
