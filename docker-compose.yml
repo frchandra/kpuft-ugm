@@ -16,6 +16,7 @@ services:
         tty: true
         working_dir: /var/www
         volumes:
+            - ./cacert.pem:/etc/ssl/cacert-new.pem:ro
             - ./conf.d/php.ini:/usr/local/etc/php/php.ini:ro
             - ./conf.d/php-local.ini:/usr/local/etc/php/local.ini:ro
             - ./conf.d/php-www.conf:/usr/local/etc/php-fpm.d/www.conf:ro
