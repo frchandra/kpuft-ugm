@@ -5,28 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="vote.css">
-    <title>[SIMULASI] Pemilu FT UGM 2021</title>
+    <title>Pemilu FT UGM 2021</title>
     <link rel="icon" href="logo-kpu-2021.ico">
-    <style>
-        #card1:after{
-            bottom:15px;
-            right:10px;
-            text-align: right;
-            content: "NURHADI   ";
-        }
-        #card2:before{
-            top:15px;
-            left:10px;
-            text-align: left;
-            content: "2";
-        }
-        #card2:after{
-            bottom:15px;
-            right:10px;
-            text-align: right;
-            content: "RANGGA SASANA";
-        }
-    </style>
 
 
 </head>
