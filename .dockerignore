@@ -1,2 +1,5 @@
 conf.d/
 ssl/
+.docker/nginx/
+.docker/dbdata/
+
