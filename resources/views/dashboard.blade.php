@@ -57,7 +57,7 @@
           <button class="button" onclick="openModal(), vote(1)">
             <div id="card1" class="card green">
                 <span class="inner">
-                    <span class="mark"><img className="photo" src="./static/media/calon1.aa7422df.webp"/></span>
+                    <span class="mark"><img className="photo" src="./assets/images/calon1.webpp"/></span>
                 </span>
             </div>
         </button>
@@ -69,7 +69,7 @@
           <button class="button" onClick="openModal(), vote(2)">
             <div id="card2" class="card green">
                 <span class="inner" style="content: rangga">
-                    <span class="mark"><img className="photo" src="./static/media/calon2.e28e98b5.webp"/></span>
+                    <span class="mark"><img className="photo" src="./assets/images/calon2.webp"/></span>
                 </span>
             </div>
         </button>
