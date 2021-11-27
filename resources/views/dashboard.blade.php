@@ -5,8 +5,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="vote.css">
-    <title>Pemilu FT UGM 2021</title>
+    <title>[SIMULASI] Pemilu FT UGM 2021</title>
     <link rel="icon" href="logo-kpu-2021.ico">
+    <style>
+        #card1:after{
+            bottom:15px;
+            right:10px;
+            text-align: right;
+            content: "NURHADI   ";
+        }
+        #card2:before{
+            top:15px;
+            left:10px;
+            text-align: left;
+            content: "2";
+        }
+        #card2:after{
+            bottom:15px;
+            right:10px;
+            text-align: right;
+            content: "RANGGA SASANA";
+        }
+    </style>
+
+
 </head>
 
 <script>
@@ -66,7 +88,7 @@
           {{-- <button id="button2" class="button" onclick="openModal(), vote(2)"></button> --}}
           <button class="button" onClick="openModal(), vote(2)">
             <div id="card2" class="card green">
-                <span class="inner">
+                <span class="inner" style="content: rangga">
                     <span class="mark"><img className="photo" src="./static/media/calon2.e28e98b5.webp"/></span>
                 </span>
             </div>
