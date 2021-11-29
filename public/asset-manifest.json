@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.5229f4af.chunk.js",
-    "main.js.map": "/static/js/main.5229f4af.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.5732f9c4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.5732f9c4.js.map",
+    "main.js": "/static/js/main.38c62c5f.chunk.js",
+    "main.js.map": "/static/js/main.38c62c5f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ed37afeb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ed37afeb.js.map",
     "static/css/2.a95be28f.chunk.css": "/static/css/2.a95be28f.chunk.css",
-    "static/js/2.d9a1eccf.chunk.js": "/static/js/2.d9a1eccf.chunk.js",
-    "static/js/2.d9a1eccf.chunk.js.map": "/static/js/2.d9a1eccf.chunk.js.map",
-    "static/js/3.f6d6fd97.chunk.js": "/static/js/3.f6d6fd97.chunk.js",
-    "static/js/3.f6d6fd97.chunk.js.map": "/static/js/3.f6d6fd97.chunk.js.map",
+    "static/js/2.78a278dd.chunk.js": "/static/js/2.78a278dd.chunk.js",
+    "static/js/2.78a278dd.chunk.js.map": "/static/js/2.78a278dd.chunk.js.map",
+    "static/js/3.b096f76a.chunk.js": "/static/js/3.b096f76a.chunk.js",
+    "static/js/3.b096f76a.chunk.js.map": "/static/js/3.b096f76a.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.a95be28f.chunk.css.map": "/static/css/2.a95be28f.chunk.css.map",
-    "static/js/2.d9a1eccf.chunk.js.LICENSE.txt": "/static/js/2.d9a1eccf.chunk.js.LICENSE.txt",
+    "static/js/2.78a278dd.chunk.js.LICENSE.txt": "/static/js/2.78a278dd.chunk.js.LICENSE.txt",
     "static/media/ACARA.f86f964d.webp": "/static/media/ACARA.f86f964d.webp",
     "static/media/ACARA2.7b1ae7c9.webp": "/static/media/ACARA2.7b1ae7c9.webp",
     "static/media/GameOfSquids.e0727d0b.ttf": "/static/media/GameOfSquids.e0727d0b.ttf",
@@ -31,8 +31,9 @@
     "static/media/cards.1f9019ff.webp": "/static/media/cards.1f9019ff.webp",
     "static/media/catur.889001fb.webp": "/static/media/catur.889001fb.webp",
     "static/media/choosecandidate.77decc4c.webp": "/static/media/choosecandidate.77decc4c.webp",
+    "static/media/cv-anju-gerald.d049b29f.pdf": "/static/media/cv-anju-gerald.d049b29f.pdf",
     "static/media/dice.acc26e3d.webp": "/static/media/dice.acc26e3d.webp",
-    "static/media/logo-kpu-2021.fe1e9c29.webp": "/static/media/logo-kpu-2021.fe1e9c29.webp",
+    "static/media/logo-kpu.82ec55a1.webp": "/static/media/logo-kpu.82ec55a1.webp",
     "static/media/logo.5b19bb3b.webp": "/static/media/logo.5b19bb3b.webp",
     "static/media/path.7c060c70.webp": "/static/media/path.7c060c70.webp",
     "static/media/rectangle1.4fdf4c50.webp": "/static/media/rectangle1.4fdf4c50.webp",
@@ -46,9 +47,9 @@
     "static/media/tahap5.e8db2f96.webp": "/static/media/tahap5.e8db2f96.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.5732f9c4.js",
+    "static/js/runtime-main.ed37afeb.js",
     "static/css/2.a95be28f.chunk.css",
-    "static/js/2.d9a1eccf.chunk.js",
-    "static/js/main.5229f4af.chunk.js"
+    "static/js/2.78a278dd.chunk.js",
+    "static/js/main.38c62c5f.chunk.js"
   ]
 }
