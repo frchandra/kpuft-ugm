@@ -23,7 +23,7 @@
       <form action="dashboard" method="POST" onsubmit="return confirm('Are you sure you want to submit?');">
         @csrf 
         <div class="hiddenradio">
-          <h1>Calon Ketua DPM</h1>
+          {{-- <h1>Calon Ketua DPM</h1> --}}
           <div class="choice">
           <label>
             <input type="radio" name="cat01" value="AURORA TARISA" required>
@@ -39,7 +39,7 @@
         </div>
         
         <div class="hiddenradio">
-          <h1>Calon Ketua DPM UF</h1>
+          {{-- <h1>Calon Ketua DPM UF</h1> --}}
           <div class="choice">
             <label>
               <input type="radio" name="cat02" value="DHAFIN ANDRIAN" required>
@@ -55,7 +55,7 @@
         </div>
         
         <div class="hiddenradio">
-          <h1>Calon Ketua LEM</h1>
+          {{-- <h1>Calon Ketua LEM</h1> --}}
           <div class="choice">
           <label>
             <input type="radio" name="cat03" value="DHIMAS RAMADHAN" required>
