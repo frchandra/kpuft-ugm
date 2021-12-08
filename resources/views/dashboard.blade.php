@@ -17,22 +17,22 @@
     <form action="dashboard" method="POST" onsubmit="return confirm('Are you sure you want to submit?');">
         @csrf
         <p>Category 1</p>
-        <input type="radio"  name="cat01" value="calon01" required>
+        <input type="radio"  name="cat01" value="DHAFIN ANDRIAN" required>
         <label>calon01</label><br>
-        <input type="radio"  name="cat01" value="anti calon01">
+        <input type="radio"  name="cat01" value="ANTI DHAFIN ANDRIAN">
         <label>anti calon01</label><br>
       
          
         <p>Catogory 2</p>
-        <input type="radio" name="cat02" value="calon02" required>
+        <input type="radio" name="cat02" value="DHIMAS RAMADHAN" required>
         <label>calon02</label><br>
-        <input type="radio" name="cat02" value="anti calon02">
+        <input type="radio" name="cat02" value="ANTI DHIMAS RAMADHAN">
         <label>anti calon02</label><br>
 
         <p>Catogory 3</p>
-        <input type="radio" name="cat03" value="calon03" required>
+        <input type="radio" name="cat03" value="AURORA TARISA" required>
         <label>calon03</label><br>
-        <input type="radio" name="cat03" value="anti calon03">
+        <input type="radio" name="cat03" value="ANTI AURORA TARISA">
         <label>anti calon03</label><br>
         
         <br>
