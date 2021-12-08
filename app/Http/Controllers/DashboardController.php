@@ -18,15 +18,19 @@ class DashboardController extends Controller{
 
     public function store(Request $request){
         //increment perolehan suara
-        $calonId = (int)$request->input('calonId'); //berpotensi error bila user mengubah DOM dari formnya
+        $cat_1 = $request->input('cat01'); //berpotensi error bila user mengubah DOM dari formnya
+        $cat_2 = $request->input('cat02'); 
+        $cat_3 = $request->input('cat03'); 
 
             try {
-                $affected = Calon::where('calon_id', $calonId)->update(['vote'=> DB::raw('vote+1')]);                
+                $affected_1 = Calon::where('nama', $cat_1)->update(['vote'=> DB::raw('vote+1')]);                
+                $affected_2 = Calon::where('nama', $cat_2)->update(['vote'=> DB::raw('vote+1')]);                
+                $affected_3 = Calon::where('nama', $cat_3)->update(['vote'=> DB::raw('vote+1')]);                
             } catch (\Throwable $th) {
-                // dd($th);
-                return "Access Denied...";
+                dd($th);
+                // return "Access Denied...";
             }
-            if($affected == 0){
+            if($affected_1 == 0 || $affected_2 == 0 || $affected_3 == 0){
                 return "input invalid (bruhhh....)";
             }
 
