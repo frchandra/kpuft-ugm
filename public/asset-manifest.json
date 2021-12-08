@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.397684f8.chunk.js",
-    "main.js.map": "/static/js/main.397684f8.chunk.js.map",
+    "main.js": "/static/js/main.3f121744.chunk.js",
+    "main.js.map": "/static/js/main.3f121744.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5732f9c4.js",
     "runtime-main.js.map": "/static/js/runtime-main.5732f9c4.js.map",
     "static/css/2.a95be28f.chunk.css": "/static/css/2.a95be28f.chunk.css",
@@ -44,7 +44,7 @@
     "static/media/choosecandidate.77decc4c.webp": "/static/media/choosecandidate.77decc4c.webp",
     "static/media/dice.acc26e3d.webp": "/static/media/dice.acc26e3d.webp",
     "static/media/jam.a477981c.png": "/static/media/jam.a477981c.png",
-    "static/media/line.66b437fd.png": "/static/media/line.66b437fd.png",
+    "static/media/line.24c5b85a.png": "/static/media/line.24c5b85a.png",
     "static/media/logo-kpu.3a54c27e.png": "/static/media/logo-kpu.3a54c27e.png",
     "static/media/logo.5b19bb3b.webp": "/static/media/logo.5b19bb3b.webp",
     "static/media/no.409c8082.png": "/static/media/no.409c8082.png",
@@ -66,6 +66,6 @@
     "static/js/runtime-main.5732f9c4.js",
     "static/css/2.a95be28f.chunk.css",
     "static/js/2.4a45486b.chunk.js",
-    "static/js/main.397684f8.chunk.js"
+    "static/js/main.3f121744.chunk.js"
   ]
 }
