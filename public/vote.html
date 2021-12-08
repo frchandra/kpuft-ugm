@@ -17,7 +17,7 @@
   <h3 class="back"><a class="back" href="/">&#8592; Kembali</a></h3>
   <h2>Anda Masuk Sebagai {{ $nama }}</h2>
 
-  <p class="font-title" style="font-size: calc(0.5rem + 7vmin); margin-top: 3vmin;">Klik Calon Ketua Pilihanmu!</p>
+    <p class="font-title" style="font-size: calc(0.5rem + 7vmin); margin-top: 3vmin;">Klik Calon Ketua Pilihanmu!</p>
 
 
   <form action="dashboard" method="POST" onsubmit="return confirm('Are you sure you want to submit?');">
@@ -26,12 +26,12 @@
       <h1>Calon Ketua DPM</h1>
       <div class="choice">
       <label>
-        <input type="radio" name="cat01" value="AURORA TARISA" required>
+        <input type="radio" name="cat01" required>
         <img src="assets/images/calon2.png">
       </label>
       <p style="min-width: 20vmin;">atau</p>
       <label>
-        <input type="radio" name="cat01" value="ANTI AURORA TARISA" required>
+        <input type="radio" name="cat01" required>
         <img src="assets/images/kosong.png">
       </label>
     </div>
@@ -42,12 +42,12 @@
       <h1>Calon Ketua DPM UF</h1>
       <div class="choice">
         <label>
-          <input type="radio" name="cat02" value="DHAFIN ANDRIAN" required>
+          <input type="radio" name="cat02" required>
           <img src="assets/images/calon3.png">
         </label>
         <p style="min-width: 20vmin;">atau</p>
         <label>
-          <input type="radio" name="cat02" value="ANTI DHAFIN ANDRIAN" required>
+          <input type="radio" name="cat02" required>
           <img src="assets/images/kosong.png">
         </label>
       </div>
@@ -58,18 +58,17 @@
       <h1>Calon Ketua LEM</h1>
       <div class="choice">
       <label>
-        <input type="radio" name="cat03" value="DHIMAS RAMADHAN" required>
+        <input type="radio" name="cat03" required>
         <img src="assets/images/calon1.png">
       </label>
       <p style="min-width: 20vmin;">atau</p>
       <label>
-        <input type="radio" name="cat03" value="ANTI DHIMAS RAMADHAN" required>
+        <input type="radio" name="cat03" required>
         <img src="assets/images/kosong.png">
       </label>
     </div>
     </div>
-    
-    <div id="myModal" class="modal">
+            <div id="myModal" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
                 <p class="close" onclick="closeModal()">&times;</p>
@@ -82,13 +81,13 @@
                     </a>
                 </div>
             </div>
-    </div>
+        </div>
 
-    <div class="button" onclick="openModal()">
-        Pilih
-    </div>
+        <div class="button" onclick="openModal()">
+          Pilih
+        </div>
 
-    <div id="myModal" class="modal">
+        <div id="myModal" class="modal">
           <!-- Modal content -->
           <div class="modal-content">
               <p class="close" onclick="closeModal()">&times;</p>
@@ -101,10 +100,14 @@
                   </a>
               </div>
           </div>
-    </div>
-
+        </div>
     </form> 
 </div>
+
+
+
+
+
 
 </body>
 
