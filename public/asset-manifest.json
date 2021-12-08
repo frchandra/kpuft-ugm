@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.96c8968c.chunk.js",
-    "main.js.map": "/static/js/main.96c8968c.chunk.js.map",
+    "main.js": "/static/js/main.397684f8.chunk.js",
+    "main.js.map": "/static/js/main.397684f8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5732f9c4.js",
     "runtime-main.js.map": "/static/js/runtime-main.5732f9c4.js.map",
     "static/css/2.a95be28f.chunk.css": "/static/css/2.a95be28f.chunk.css",
@@ -28,6 +28,7 @@
     "static/media/Montserrat-Regular.3cd78665.ttf": "/static/media/Montserrat-Regular.3cd78665.ttf",
     "static/media/PDD.8bcac01e.png": "/static/media/PDD.8bcac01e.png",
     "static/media/PERKAP.3ff77705.png": "/static/media/PERKAP.3ff77705.png",
+    "static/media/PilihKandidat.7262e729.png": "/static/media/PilihKandidat.7262e729.png",
     "static/media/Quacker.a3bdf881.ttf": "/static/media/Quacker.a3bdf881.ttf",
     "static/media/RAFRES.bccf8b49.png": "/static/media/RAFRES.bccf8b49.png",
     "static/media/bg-black.8d087c4e.webp": "/static/media/bg-black.8d087c4e.webp",
@@ -44,7 +45,7 @@
     "static/media/dice.acc26e3d.webp": "/static/media/dice.acc26e3d.webp",
     "static/media/jam.a477981c.png": "/static/media/jam.a477981c.png",
     "static/media/line.66b437fd.png": "/static/media/line.66b437fd.png",
-    "static/media/logo-kpu.82ec55a1.webp": "/static/media/logo-kpu.82ec55a1.webp",
+    "static/media/logo-kpu.3a54c27e.png": "/static/media/logo-kpu.3a54c27e.png",
     "static/media/logo.5b19bb3b.webp": "/static/media/logo.5b19bb3b.webp",
     "static/media/no.409c8082.png": "/static/media/no.409c8082.png",
     "static/media/path.7c060c70.webp": "/static/media/path.7c060c70.webp",
@@ -65,6 +66,6 @@
     "static/js/runtime-main.5732f9c4.js",
     "static/css/2.a95be28f.chunk.css",
     "static/js/2.4a45486b.chunk.js",
-    "static/js/main.96c8968c.chunk.js"
+    "static/js/main.397684f8.chunk.js"
   ]
 }
