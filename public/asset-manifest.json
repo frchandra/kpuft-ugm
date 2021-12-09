@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.34c7a759.chunk.js",
-    "main.js.map": "/static/js/main.34c7a759.chunk.js.map",
+    "main.js": "/static/js/main.dd78eeab.chunk.js",
+    "main.js.map": "/static/js/main.dd78eeab.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.913a1446.js",
     "runtime-main.js.map": "/static/js/runtime-main.913a1446.js.map",
     "static/css/2.a95be28f.chunk.css": "/static/css/2.a95be28f.chunk.css",
@@ -46,7 +46,7 @@
     "static/media/tahap0.e4286223.webp": "/static/media/tahap0.e4286223.webp",
     "static/media/tahap1.6098c807.webp": "/static/media/tahap1.6098c807.webp",
     "static/media/tahap2.c12165cb.webp": "/static/media/tahap2.c12165cb.webp",
-    "static/media/tahap3.64998eb2.webp": "/static/media/tahap3.64998eb2.webp",
+    "static/media/tahap3.f8454387.webp": "/static/media/tahap3.f8454387.webp",
     "static/media/tahap4.cb4ec42a.webp": "/static/media/tahap4.cb4ec42a.webp",
     "static/media/tahap5.3be1f52b.webp": "/static/media/tahap5.3be1f52b.webp",
     "static/media/windL.c5c75cc9.webp": "/static/media/windL.c5c75cc9.webp",
@@ -56,6 +56,6 @@
     "static/js/runtime-main.913a1446.js",
     "static/css/2.a95be28f.chunk.css",
     "static/js/2.afa102f7.chunk.js",
-    "static/js/main.34c7a759.chunk.js"
+    "static/js/main.dd78eeab.chunk.js"
   ]
 }
