@@ -9,7 +9,7 @@ todo list: <br>
 6. jalankan `docker exec -it kpuft-ugm-db`
 7. pindah ke directory `/var/lib/mysql` lalu restore database kpuft_ugm dengan file .sql yang telah dicopy lalu `exit`
 8. set firewall untuk docker
-9. profit!!!
+9. profit!
 
 perintah penting:<br>
 clearing:
